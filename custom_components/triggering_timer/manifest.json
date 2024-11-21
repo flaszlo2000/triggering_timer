@@ -2,6 +2,10 @@
     "domain": "triggering_timer",
     "name": "Triggering Timer Integration",
     "version": "0.1.5",
+    "codeowners": [
+        "@flaszlo2000"
+    ],
+    "documentation": "https://github.com/flaszlo2000/triggering_timer",
     "dependencies": [],
     "requirements": []
 }

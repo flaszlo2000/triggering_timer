@@ -1,1 +1,1 @@
-This is a custom timer integration for Home Assistant that can trigger any automation after the specified time on the UI.
+This is a custom timer integration for Home Assistant that can trigger any automation after the specified time.

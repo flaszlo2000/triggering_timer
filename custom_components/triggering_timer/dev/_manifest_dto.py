@@ -10,7 +10,7 @@ class ManifestDTO:
     name: str = field(default = Config.NAME.value)
     version: str = field(default = __version__)
 
-    codeowners: List[str] = field(default = ["@flaszlo2000"])
+    codeowners: List[str] = field(default_factory = lambda: ["@flaszlo2000"])
     documentation: str = field(default = "https://github.com/flaszlo2000/triggering_timer")
 
     dependencies: List[str] = field(default_factory = list)
