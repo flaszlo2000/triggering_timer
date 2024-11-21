@@ -1,0 +1,13 @@
+triggering_timer: 
+  description: Triggers an automation after a specified delay.
+  fields:
+    automation_entity_id: 
+      description: The automation to trigger
+      example: automation.lights_on
+    name: 
+      description: The friendly name of the automation
+      example: automation
+    trigger_after_delay: 
+      description: The time delay before triggering the automation
+      example: 00:10:00
+  name: Triggering Timer Integration

@@ -1,0 +1,7 @@
+{
+    "domain": "triggering_timer",
+    "name": "Triggering Timer Integration",
+    "version": "0.1.5",
+    "dependencies": [],
+    "requirements": []
+}
