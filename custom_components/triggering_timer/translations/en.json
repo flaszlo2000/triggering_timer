@@ -1,0 +1,22 @@
+{
+    "services": {
+        "triggering_timer": {
+            "name": "Trigger Timer",
+            "description": "Starts a timer after a specified delay.",
+            "fields": {
+                "automation_entity_id": {
+                    "name": "Automation Entity ID",
+                    "description": "The ID of the automation to trigger."
+                },
+                "name": {
+                    "name": "Timer Name",
+                    "description": "The name of the timer to start."
+                },
+                "trigger_after_delay": {
+                    "name": "Delay",
+                    "description": "The delay in seconds before the timer is triggered."
+                }
+            }
+        }
+    }
+}
