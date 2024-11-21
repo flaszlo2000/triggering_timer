@@ -6,6 +6,7 @@
         "@flaszlo2000"
     ],
     "documentation": "https://github.com/flaszlo2000/triggering_timer",
+    "iot_class": "local_push",
     "dependencies": [],
     "requirements": []
 }

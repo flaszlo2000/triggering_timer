@@ -13,5 +13,7 @@ class ManifestDTO:
     codeowners: List[str] = field(default_factory = lambda: ["@flaszlo2000"])
     documentation: str = field(default = "https://github.com/flaszlo2000/triggering_timer")
 
+    iot_class: str = field(default = "local_push")
+
     dependencies: List[str] = field(default_factory = list)
     requirements: List[str] = field(default_factory = list)
