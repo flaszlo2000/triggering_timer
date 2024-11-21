@@ -1,11 +1,11 @@
 from pathlib import Path
 from typing import Dict, Final
 
-from _manifest_dto import ManifestDTO
+from _manifest_dto import ManifestDTO, get_correct_manifest
 from _services_dto import create_yaml
 
 CONFIG_FILES: Final[Dict[str, str]] = {
-    "manifest.json": str(ManifestDTO().__dict__).replace("'", '"'),
+    "manifest.json": get_correct_manifest(ManifestDTO()),
     "services.yaml": create_yaml()
 }
 

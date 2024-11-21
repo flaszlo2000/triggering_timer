@@ -17,3 +17,15 @@ class ManifestDTO:
 
     dependencies: List[str] = field(default_factory = list)
     requirements: List[str] = field(default_factory = list)
+
+def get_correct_manifest(manifest_dto: ManifestDTO) -> str:
+    dto_json = manifest_dto.__dict__
+
+    # NOTE: required by hacs
+    result = {
+        "domain": dto_json.pop("domain"),
+        "name": dto_json.pop("name"),
+        **dict(sorted(dto_json.items()))
+    }
+
+    return str(result).replace("'", '"')
