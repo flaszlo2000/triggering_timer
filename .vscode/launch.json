@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Generate config",
+            "type": "debugpy",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/custom_components/triggering_timer/",
+            "program": "dev/_generate_conf.py",
+            "console": "integratedTerminal",
+            
+            "env": {
+                "PYTHONPATH": ":custom_components/triggering_timer"
+            }
+        }
+    ]
+}
