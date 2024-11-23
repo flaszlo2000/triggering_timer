@@ -45,6 +45,9 @@ class App:
             return UUID(_input)
         except ValueError:
             raise AttributeError("Incorrect id!")
+
+    def getTimers(self) -> Timers:
+        return self._timers
     #endregion
 
     #region automation handling

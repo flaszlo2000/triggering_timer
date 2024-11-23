@@ -3,6 +3,7 @@ from typing import (Callable, Dict, Final, Iterable, List, Optional, Tuple,
 from uuid import UUID
 
 from .cancellable_timer import CancellableTimer
+from .extensions.filter import has
 
 
 class Timers:
@@ -51,3 +52,11 @@ class Timers:
         timer_to_cancel.cancel()
 
         self.removeTimer(timer_to_cancel)
+
+    def hasTimerWithId(self, automation_id: str) -> bool:
+        return has(
+            filter(
+                lambda cancellable_timer: cancellable_timer.automation_id == automation_id,
+                self.__timers
+            )
+        )
